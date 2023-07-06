@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(35, 37, 58);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+.container {
+    /* CENTRALIZAÇÃO DA PÁGINA INTEIRA */
+    max-width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    padding: 15px 150px 15px 15px;
+    background-color: rgb(21, 25, 39);
+}
+
+.navegacao {
+    display: flex;
+    justify-content: right;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav {
+    cursor: pointer;
+    display: inline;
+    color: white;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+}
+
+.apresentacao>h1 {
+    padding-bottom: 25px;
+    font-weight: 300;
+    font-size: 2.9pc;
+    color: white;
+}
+
+.apresentacao>p {
+    padding-bottom: 25px;
+    color: grey;
+}
+
+.apresentacao>button {
+    cursor: pointer;
+    color: white;
+    width: 150px;
+    border-radius: 2px;
+    border: red;
+    background-color: rgb(255, 73, 87);
+    padding: 13px;
+}
+
+.skills {
+    color: white;
+    position: relative;
+    top: 505px;
+}
+
+.skills>h2 {
+    margin-top: 10px;
+    color: rgb(255, 73, 87);
+    font-size: 35px;
+}
+
+hr {
+    /* comportamento de BORDA!  */
+    border-color: rgb(255, 73, 87);
+    margin-top: 5px;
+    width: 80px;
+}
+
+.sec_flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 52px 0px 0px 0px;
+}
+
+.sec_flex>div {
+    padding: 10px;
+    background-color: rgb(43, 46, 65);
+    width: 271px;
+    height: 234px;
+}
+
+.sec_flex>div>p {
+    max-width: 79%;
+    position: relative;
+    top: 52px;
+    left: 17px;
+}
+
+.tam {
+    position: relative;
+    border-radius: 50px;
+    left: 20px;
+    top: 20px;
+    font-size: 60px;
+}
+
+.border {
+    border-radius: 10px;
+}
+
+
+footer {
+    position: relative;
+    top: 642px;
+    left: 80px;
+}
+
+footer>h2 {
+    color: rgb(255, 73, 87);
+    font-size: 32px;
+}
+
+footer>form {
+    position: relative;
+    top: 30px;
+}
+
+.inputStyle {
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(43, 46, 65);
+    border: none;
+    display: block;
+    padding: 10px;
+    height: 50px;
+    width: 348px;
+}
+
+form>button {
+    cursor: pointer;
+    width: 157px;
+    font-weight: 600;
+    position: relative;
+    top: 50px;
+    left: 190px;
+    border: none;
+    background-color: rgb(255, 73, 87);
+    color: black;
+    padding: 11px;
+    margin-bottom: 80px;
+}
+
+button>span {
+    margin-right: 9px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+textarea::placeholder {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width:632px) {
+    .apresentacao {
+        height: 85vh;
+    }
+}
+
+@media only screen and (max-height:590px) {
+    .apresentacao {
+        margin-top: 80px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width:806px) {
+    footer {
+        left: 0px;
+    }
+}
